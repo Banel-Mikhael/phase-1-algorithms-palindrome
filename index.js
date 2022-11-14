@@ -1,6 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+ let charactersInWord = word.split('');
+
+ const reverseCharsInWord=charactersInWord.reverse();
+
+ const ReveredWord=reverseCharsInWord.join('')
+
+ if(word.toLowerCase() === ReveredWord.toLowerCase()){
+  return true
+ }
+ else{
+ return false
+ }
 }
+
 
 /* 
   Add your pseudocode here
@@ -8,6 +20,8 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+
+  first we split our words to reverse them then put the word(chars) together again and check if main word is same as reversed
 */
 
 // You can run `node index.js` to view these console logs
